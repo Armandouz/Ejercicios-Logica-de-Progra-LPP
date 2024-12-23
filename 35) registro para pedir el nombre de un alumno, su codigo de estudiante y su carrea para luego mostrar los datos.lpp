@@ -1,0 +1,25 @@
+/*Uitlizar un registro para pedir el nombre de un alumno, su codigo 
+de estudiante y su carrera, para luego mostrar en pantalla los datos */
+
+
+registro reg_alumno
+	cadena [30] nombre
+	entero codigo
+	cadena [30] carrera
+fin registro 
+
+reg_alumno alum
+
+inicio 
+	escriba "Escriba el nombre del alumno: "
+	lea alum.nombre
+	escriba "Escriba el codigo del alumno: "
+	lea alum.codigo
+	escriba "Escriba la carrera que estudia: "
+	lea alum.carrera
+	
+	llamar nueva_linea
+	escriba "El alumno ", alum.nombre
+	llamar nueva_linea
+	escriba "Con codigo ", alum.codigo, " estudia ", alum.carrera
+fin

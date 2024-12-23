@@ -1,0 +1,17 @@
+// Desarrollar un pseudocodigo para calcular e imrpimir el factorial de un numero.
+
+
+entero x, numero, factorial
+
+inicio
+	escriba "Digite un numero para sacar el factorial: "
+	lea numero
+	
+	factorial <- 1
+	
+	para x <- 1 hasta numero haga
+		factorial <- factorial * x
+	fin para 
+	
+	escriba "El factorial de ", numero, " es: ", factorial
+fin

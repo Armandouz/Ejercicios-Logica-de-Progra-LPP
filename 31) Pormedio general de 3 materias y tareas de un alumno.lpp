@@ -1,0 +1,90 @@
+/*Hacer un pseudocodigo para resolver: Un alumno desea saber cual sera su promedio
+general en las tres materias mas dificiles que cursa y cual sera el promedio que 
+obtendra en cada una de ellas. Estas materias se evaluan como se muestra a continuacion
+
+	La calificacion de matematicas se obtiene de la siguiente manera:
+	examen 90%
+	promedio de tareas 10%
+	en est materia se pidio un total de tres tareas
+	
+	
+	La calificacion de fisica se obtiene de la siguiente manera:
+	examen 80%
+	promedio de tareas 20%
+	en est materia se pidio un total de dos tareas
+	
+	La calificacion de qumica se obtiene de la siguiente manera:
+	examen 85%
+	promedio de tareas 15%
+	en est materia se pidio un total de tres tareas   */
+	
+entero examen_mate, examen_fisica, examen_quimica
+entero tarea_mate1, tarea_mate2, tarea_mate3
+entero tarea_fisica1, tarea_fisica2, tarea_fisica3
+entero tarea_quimica1, tarea_quimica2, tarea_quimica3
+real examen_mate_nuevo, promedio_tarea_mate, promedio_tarea_mate_nuevo, nota_general_mate
+real examen_fisica_nuevo, promedio_tarea_fisica, promedio_tarea_fisica_nuevo, nota_general_fisica
+real examen_quimica_nuevo, promedio_tarea_quimica, promedio_tarea_quimica_nuevo, nota_general_quimica
+
+inicio 
+	escriba "---------- MATEMATICA ----------"
+	llamar nueva_linea
+	escriba "Digite la nota obtenida en el examen: "
+	lea examen_mate
+	escriba "Digite la nota obtenida en la primera tarea: "
+	lea tarea_mate1
+	escriba "Digite la nota obtenida en la segunda tarea: "
+	lea tarea_mate2
+	escriba "Digite la nota obtenida en la tercera tarea: "
+	lea tarea_mate3
+	llamar nueva_linea 
+	
+		escriba "---------- FISICA ----------"
+	llamar nueva_linea
+	escriba "Digite la nota obtenida en el examen: "
+	lea examen_fisica
+	escriba "Digite la nota obtenida en la primera tarea: "
+	lea tarea_fisica1
+	escriba "Digite la nota obtenida en la segunda tarea: "
+	lea tarea_fisica2
+	llamar nueva_linea 
+	
+		escriba "---------- QUIMICA ----------"
+	llamar nueva_linea
+	escriba "Digite la nota obtenida en el examen: "
+	lea examen_quimica
+	escriba "Digite la nota obtenida en la primera tarea: "
+	lea tarea_quimica1
+	escriba "Digite la nota obtenida en la segunda tarea: "
+	lea tarea_quimica2
+	escriba "Digite la nota obtenida en la tercera tarea: "
+	lea tarea_quimica3
+	llamar nueva_linea 
+	
+	
+	examen_mate_nuevo <- examen_mate * (90/100)
+	promedio_tarea_mate <- (tarea_mate1 + tarea_mate2 + tarea_mate3) / 3
+	promedio_tarea_mate_nuevo <- promedio_tarea_mate * (10/100)
+	nota_general_mate <- examen_mate_nuevo + promedio_tarea_mate_nuevo
+	
+	examen_fisica_nuevo <- examen_fisica * (80/100)
+	promedio_tarea_fisica <- (tarea_fisica1 + tarea_fisica2)/2
+	promedio_tarea_fisica_nuevo <- promedio_tarea_fisica * (20/100)
+	nota_general_fisica <- examen_fisica_nuevo + promedio_tarea_fisica_nuevo
+	
+	examen_quimica_nuevo <- examen_quimica * (85/100)
+	promedio_tarea_quimica <- (tarea_quimica1 + tarea_quimica2 + tarea_quimica3) /3
+	promedio_tarea_quimica_nuevo <- promedio_tarea_quimica * (15/100)
+	nota_general_quimica <- examen_quimica_nuevo + promedio_tarea_quimica_nuevo
+	
+	escriba "--------------------"
+	llamar nueva_linea
+	escriba "----- NOTAS --------"
+	llamar nueva_linea
+	escriba "La nota general en matematica es: ", nota_general_mate
+	llamar nueva_linea
+	escriba "La nota general en fisica es : ", nota_general_fisica
+	llamar nueva_linea
+	escriba "La nota general en quimica es: ", nota_general_quimica
+	
+fin

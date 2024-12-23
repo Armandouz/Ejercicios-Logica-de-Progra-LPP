@@ -1,0 +1,18 @@
+//Hacer un pseudocodigo para sumar 2 numeros, si esta suuma supera a 10.
+
+entero numero1, numero2, suma
+
+inicio
+	Escriba "Digite el primer numero: "
+	lea numero1
+	escriba "Digite el segundo numero: "
+	lea numero2
+	
+	suma <- numero1 + numero2
+
+	si suma > 10 entonces
+		escriba "La suma supera a 10 y el resultado es: ", suma
+	sino
+		escriba "La suma no supera a 10 no se puede realizar la operacion"
+	fin si	
+fin

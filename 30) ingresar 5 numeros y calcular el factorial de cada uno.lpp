@@ -1,0 +1,20 @@
+/* Hacer un pseudocodigo para ingresar 5 numeros y calcular 
+el factorial para cada uno de os numeros */
+
+entero k, i, factorial, numero
+
+inicio 
+	para i <- 1 hasta 5 haga  
+		escriba "Ingrese un numero para calcular el factorial: "
+		lea numero
+		
+		factorial <- 1
+		
+		para k <- 1 hasta numero haga 
+			factorial <- factorial * k
+		fin para 
+		
+		escriba "El factorial de ", numero, " es ", factorial
+		llamar nueva_linea
+	fin para 	
+fin

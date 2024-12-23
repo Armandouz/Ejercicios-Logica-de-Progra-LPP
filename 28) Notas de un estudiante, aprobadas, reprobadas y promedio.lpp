@@ -1,0 +1,52 @@
+/* Hacer un pseudocodigo para resolver: Dado N notas de un estudiante calcular:
+a) Cuantas notas tinene reprobadas.
+b) Cuantas notas aprobadas
+c) El promedio de notas.
+e) El promedo de notas aprobadas y reprobadas. */
+
+entero n, cont, cantidad_reprobadas, numero_aprobadas, suma_reprobadas, suma_aprobadas, suma, nota
+real promedio_reprobadas, promedio_aprobadas, promedio 
+
+inicio
+	escriba "Digite el numero de notas: "
+	lea n
+	cont <- 1
+	cantidad_reprobadas <- 0
+	numero_aprobadas <- 0
+	suma_aprobadas <- 0
+	suma_reprobadas <- 0
+	suma <- 0
+	llamar nueva_linea
+	escriba "-------------------------------"
+	
+	mientras cont <= n haga
+		llamar nueva_linea
+		escriba "Digite la nota obtenida: "
+		lea nota
+		
+		si nota <= 10 entonces 
+			cantidad_reprobadas <- cantidad_reprobadas + 1
+			suma_reprobadas <- suma_reprobadas + nota
+		sino
+			numero_aprobadas <- numero_aprobadas + 1
+			suma_aprobadas <- suma_aprobadas + nota
+		fin si
+		suma <- suma + nota
+		cont <- cont + 1 
+	fin mientras
+	
+	promedio_aprobadas <- suma_aprobadas / numero_aprobadas
+	promedio_reprobadas <- suma_reprobadas / cantidad_reprobadas
+	promedio <- suma / n
+	
+	llamar nueva_linea
+	escriba "Cantidad de reprobadas: ", cantidad_reprobadas
+	llamar nueva_linea
+	escriba "Cantidad de aprobadas: ", numero_aprobadas
+	llamar nueva_linea
+	escriba "Promedio: ", promedio
+	llamar nueva_linea 
+	escriba "Promedio notas aprobadas: ", promedio_aprobadas
+	llamar nueva_linea
+	escriba "Promedio de notas reprobadas: ", promedio_reprobadas
+fin

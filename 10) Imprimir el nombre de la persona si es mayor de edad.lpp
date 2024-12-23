@@ -1,0 +1,20 @@
+/*Hacer un pseudcodigo pra ingresar por teclado el nombre y la edad de cualquier persona e imprima,
+solo si la persona es mayor de edad, el nombre de la persona*/ 
+
+
+cadena [30]nombre
+entero edad
+
+inicio 
+	escriba "Digite su nombre "
+	lea nombre
+	escriba "Digite su edad "
+	lea edad
+	
+	si edad >= 18 entonces 
+		escriba nombre, "es mayor de edad "
+	sino
+		escriba "No es mayor de edad "
+	fin si
+	
+fin 

@@ -1,0 +1,28 @@
+/* Hacer pseudocodigo para: Pedir el nombre, sexp y edad de una persona y que nos diga
+si es mayor de 18 años para que pueda votar y muestre el nombre, sexo, y edad*/
+
+cadena [30] nombre, sexo
+entero edad
+
+inicio 
+	escriba "Digite su nombre: "
+	lea nombre
+	escriba "Digite su sexo: "
+	lea sexo
+	escriba "Digite su edad: "
+	lea edad
+	
+	si edad >= 18 entonces
+		llamar nueva_linea
+		escriba "Es mayor de edad y por lo tanto puede votar"
+		llamar nueva_linea
+		escriba "Los datos de la persona son: "
+		llamar nueva_linea
+		escriba "El nombre es: ", nombre
+		llamar nueva_linea
+		escriba "El sexo es: ", sexo
+	sino
+	
+		escriba "No es mayor de edad y por lo tanto no puede votar"
+	fin si
+fin

@@ -1,0 +1,27 @@
+ //Hacer un pseudocodigo: crear una calculadora que pida dos numeros, y entregue suma, resta, multiplicacion y division 
+ 
+ 
+ real num1, num2, suma, resta, multiplicacion, division
+ 
+ inicio 
+ 
+ 	escriba "Digite el primer numero: "
+ 	lea num1
+ 	escriba "Digite el segundo numero: "
+ 	lea num2
+ 	
+ 	suma <- num1+num2
+ 	resta <- num1-num2
+ 	multiplicacion <- num1*num2
+ 	division <- num1/num2
+ 	
+ 	llamar nueva_linea 
+ 	escriba "El resultado de la suma es: ", suma
+ 	llamar nueva_linea
+ 	escriba "El resultado de la resta es: ", resta
+ 	llamar nueva_linea 
+ 	escriba "El resultado de la multiplicacion es: ", multiplicacion
+ 	llamar nueva_linea
+ 	escriba "El resultado de la division es: ", division
+ 
+ fin 

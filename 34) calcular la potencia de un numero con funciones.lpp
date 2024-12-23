@@ -1,0 +1,39 @@
+/* Calcular la potencia de un numero.
+
+	sintaxis:
+				funcion nombre_funcion [(parametros)] : tipo de retorno
+					[variables locales]
+				inicio
+					instrucciones
+					retorne valor
+				fin  						*/
+				
+entero base, exponente, pot
+
+funcion potencia (entero base, entero exponente) : entero
+	entero i, respuesta
+
+inicio 
+	respuesta <- 1
+	para i <- 1 hasta exponente haga
+		respuesta <- respuesta * base
+	fin para
+	
+	retorne respuesta
+fin
+
+procedimiento ingreso (var entero base, var entero exponente)
+
+inicio 
+	escriba "Ingresar la base: "
+	lea base
+	escriba "Ingresar el exponente: "
+	lea exponente
+fin
+
+inicio
+	llamar ingreso (base, exponente)
+	pot <- potencia (base, exponente)
+	llamar nueva_linea
+	escriba "La potencia es: ", pot
+fin

@@ -1,0 +1,19 @@
+/* Hacer un pseudocodigo para resolver: Calcular mediante un algoritmo
+repetitivo la suma de los N primeros numeros naturales */
+
+entero numero, suma , contador
+
+inicio
+	escriba "Digite un numero para calcular la suma: "
+	lea numero
+	
+	suma <- 0
+	contador <- 1
+	
+	mientras contador <= numero haga 
+		suma <- suma + contador
+		contador <- contador + 1
+	fin mientras
+	
+	escriba "La suma es de: ", suma
+fin

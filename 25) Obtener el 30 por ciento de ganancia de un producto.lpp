@@ -1,0 +1,16 @@
+/* Hacer pseudocodigo para resolver: El dueño de una tienda compra un articulo
+a un precio determinado. Obtener el precio en que lo va a vender para obtener la gagnancia
+del 30% */
+
+
+real precio_compra, aumento, precio_venta
+
+inicio
+	escriba "Ingrese el precio de la compra: "
+	lea precio_compra
+	
+	aumento <- precio_compra * (30/100)
+	precio_venta <- precio_compra + aumento
+	
+	escriba "El nuevo precio del producto es: ", precio_venta, " Para ganar un 30%"
+fin

@@ -1,0 +1,15 @@
+/*Hacer un pseudocodigo para leer un numero y calcular el 5% del numero leido.
+Obtener tanto el numero como el porcentaje calculado*/
+
+entero numero
+real porcentaje
+
+inicio
+	escriba "Did¿gite un numero: "
+	lea numero
+	
+	porcentaje <- numero * (5/100)
+	
+	escriba "El porcentaje de ", numero, " es de ", porcentaje
+	
+fin

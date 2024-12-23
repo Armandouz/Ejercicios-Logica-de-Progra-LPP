@@ -1,0 +1,39 @@
+/* Hacer un pesudocodigo para resolver: Ingresar la base y el exponente y luego
+calcular la potencia.
+
+	sintaxis:
+				procedimientos nombre_del_procedimiento [(parametros)]
+					[variables locales]
+					
+				inicio 
+					instrucciones
+				fin							*/
+				
+entero base, exponente, potencia
+
+procedimiento ingreso (var entero base, var entero exponente)
+
+inicio 
+	escriba "Ingresar la base: "
+	lea base
+	escriba "Ingresar el exponente: "
+	lea exponente
+fin
+
+procedimiento potencia (entero base, entero exponente, var entero potencia)
+	
+	entero i
+
+inicio 
+	potencia <- 1
+	para i <- 1 hasta exponente haga 
+		potencia <- potencia * base
+	fin para
+fin
+
+inicio
+	llamar ingreso (base, exponente)
+	llamar potencia (base, exponente, potencia)
+	llamar nueva_linea
+	escriba "La potencia es: ", potencia
+fin

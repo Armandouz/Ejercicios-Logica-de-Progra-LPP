@@ -1,0 +1,33 @@
+/*Pseudcodigo para resolver: Tres personas deiciden invertir su dinero para fundar una empresa.
+Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con
+respecto a la cantidad total invertida.*/
+
+real primera_inversion, segunda_inversion, tercera_inversion
+real total_inversion
+real porcentaje_primera_inversion, porcentaje_Segunda_inversion, porcentaje_tercera_inversion
+
+
+inicio
+
+	escriba "Digite la primera inversion: "
+	lea primera_inversion
+	escriba "Digite la segunda inversion: "
+	lea segunda_inversion
+	escriba "Digie la tercera inversion: "
+	lea tercera_inversion
+	
+	
+	total_inversion <- primera_inversion + segunda_inversion + tercera_inversion
+	
+	porcentaje_primera_inversion <- (primera_inversion * 100) / total_inversion
+	porcentaje_segunda_inversion <- (segunda_inversion *100) / total_inversion
+	porcentaje_tercera_inversion <- (tercera_inversion *100) / total_inversion
+	
+	llamar nueva_linea
+	escriba "El porcentaje que invirtio el primer socio es de: ", porcentaje_primera_inversion
+	llamar nueva_linea
+	escriba "El porcentaje que invirtio el segundo socio es de: ", porcentaje_segunda_inversion
+	llamar nueva_linea
+	escriba "El porcentaje que invirtio el tercer socio es de: ", porcentaje_tercera_inversion
+
+fin

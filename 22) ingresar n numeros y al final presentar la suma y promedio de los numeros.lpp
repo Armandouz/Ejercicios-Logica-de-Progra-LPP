@@ -1,0 +1,27 @@
+/* Hacer un pseudocodigo para resolver: ingresar n numeros y al final presentar la suma y promedio de los numeros*/
+
+entero suma, contador, numeros, numero
+real promedio
+
+inicio
+	suma <- 0
+	contador <- 0 
+	
+	escriba "Cuantos numeros habran: "
+	lea numeros 
+	
+	mientras contador < numeros haga
+		escriba "Ingresar numeros: "
+		lea numero
+		contador <- contador + 1
+		suma <- numero + suma
+		promedio <- suma / numeros
+		
+	fin mientras
+	
+	llamar nueva_linea
+	
+	escriba "La suma de los numeros es: ", suma
+	llamar nueva_linea 
+	escriba "El promedio de los numeros es: ", promedio
+fin

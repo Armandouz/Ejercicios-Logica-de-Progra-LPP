@@ -1,0 +1,38 @@
+/* Hacer un pseudocodigo para resolver: Dado un numero de N de alumnos, pedir el nombre
+de cada alumno, la cantidad de notas de los alumnos, y sacar el promedio individualmente
+de cada uno, y mostrar en pantalla el nombre y el promedio individual */
+
+cadena [30] nombre
+entero alumnos, notas, x, h
+real promedio, nota_individual, suma
+
+inicio 
+	escriba "Digite el total de alumnos: "
+	lea alumnos
+	escriba "Digite el total de notas por cada alumno: "
+	lea notas
+	escriba "---------------------------------------"
+	llamar nueva_linea 
+	
+	para x <- 1 hasta alumnos haga
+		llamar nueva_linea
+		escriba "Escriba el nombre del alumno: "
+		lea nombre
+		suma <- 0
+		promedio <- 0
+		nota_individual <- 0
+		
+		para h <- 1 hasta notas haga
+			escriba "Digite la nota obtenida: "
+			lea nota_individual
+			suma <- suma + nota_individual
+			promedio <- suma / notas
+		fin para
+		
+		llamar nueva_linea
+		
+		escriba "El alumno ", nombre, " Tiene como promedio: ", promedio
+		llamar nueva_linea
+		
+		fin para 
+fin 

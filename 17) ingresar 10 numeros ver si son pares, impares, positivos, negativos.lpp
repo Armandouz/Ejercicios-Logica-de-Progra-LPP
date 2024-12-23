@@ -1,0 +1,37 @@
+/* Ralizar un psedocodigo que permita pedir 10 numeros naturales y determine e imprima
+cuantos son pares, impares, positivos y negativos*/
+
+entero x, numero, pares, impares, positivos, negativos
+
+inicio
+	pares <- 0 
+	impares <- 0
+	positivos <- 0
+	negativos <- 0
+	
+	para x <- 1 hasta 10 haga 
+		escriba "Digite un numero: "
+		lea numero
+		
+		si numero mod 2 = 0 entonces
+			pares <- pares + 1
+		sino 
+			impares <- impares + 1
+		fin si
+		
+		si numero > 0 entonces 
+			positivos <- positivos + 1
+		sino
+			negativos <- negativos + 1
+		fin si
+	fin para 
+	
+	llamar nueva_linea
+	escriba "El total de numeros pares es: ", pares
+	llamar nueva_linea
+	escriba "El total de numeros impares es: ", impares
+	llamar nueva_linea
+	escriba "El total de numeros positivos es: ", positivos
+	llamar nueva_linea
+	escriba "El total de numeros negativos es: ", negativos
+fin

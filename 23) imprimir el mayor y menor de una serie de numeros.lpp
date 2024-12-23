@@ -1,0 +1,37 @@
+/* Hacer un pseudocodigo que imprima el mayor y el menor numero de una serie de 
+N numeros que vamos introduciendo por teclado*/
+
+entero total, conteo, numero, maximo, minimo 
+
+inicio 
+	conteo <- 0
+	numero <- 0
+	maximo <- 0
+	minimo <- 9999
+	
+	escriba "Digite el total de numeros: "
+	lea total
+	
+	mientras conteo < total haga 
+		escriba "Digite un numero: "
+		lea numero 
+		
+	si numero > maximo entonces	
+		maximo <- numero
+	fin si
+	
+	si numero < minimo entonces
+		minimo <- numero 
+	fin si
+	
+		conteo <- conteo + 1
+	
+	fin mientras
+	
+	llamar nueva_linea
+	escriba "El mayor de los numeros es: ", maximo
+	llamar nueva_linea
+	escriba "El menor de los numeros es: ", minimo
+	
+	
+fin
