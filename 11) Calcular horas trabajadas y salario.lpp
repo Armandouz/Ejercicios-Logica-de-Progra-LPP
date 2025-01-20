@@ -1,0 +1,16 @@
+/*Hacer pseudocodigo para resolver: Dada las horas trabajadas de una persona y el valor por hora.
+Calcular su salario e imprimirlo*/
+
+entero hora, valor, salario
+
+inicio 
+	escriba "Digite las horas trabajadas: "
+	lea hora 
+	escriba " Digite la tarifa pagada en hora: "
+	lea valor
+	
+	salario <- hora * valor
+	
+	escriba "El salario total es: ", salario
+
+fin

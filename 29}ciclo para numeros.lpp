@@ -1,0 +1,18 @@
+/* Hacer un pseudocodigo para producir la siguiente salida en la pantalla
+
+		11111
+		22222
+		33333
+		44444   			*/
+		
+entero i, k
+
+inicio 
+	para i <- 1 hasta 4 haga 
+		para k <- 1 hasta 4 haga 
+			escriba i
+		fin para 
+		
+		llamar nueva_linea
+	fin para
+fin	

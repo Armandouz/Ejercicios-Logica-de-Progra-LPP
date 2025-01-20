@@ -1,0 +1,12 @@
+// Hacer pseudocodigo que imprima los numeros pares entre 0 y 100
+
+entero i
+
+inicio 
+	para i <- 0 hasta 100 haga
+		si i mod 2 = 0 entonces
+			escriba i
+			llamar nueva_linea
+		fin si
+	fin para
+fin

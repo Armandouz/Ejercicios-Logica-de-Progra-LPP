@@ -1,0 +1,25 @@
+/*haccer un pseudocodigo para calcular el promedio de 3 notas, y mostrar un mensaje si el alumno esta aprobado.
+Considerar que puede aprobar desde 105:*/
+
+entero nota1, nota2, nota3
+real promedio
+
+inicio 
+	escriba "Digite la primer nota: "
+	lea nota1
+	escriba "Digite la segunda nota: "
+	lea nota2
+	escriba "Digite la tercera nota: "
+	lea nota3
+	
+	
+	promedio <- (nota1+nota2+nota3)/3
+	
+	si promedio > 10.5 entonces 
+		escriba "El alumno esta aprobado con: ", promedio
+	sino
+	escriba "El alumno esta desaprobaddo con. ", promedio
+	fin si
+	
+	
+fin

@@ -1,0 +1,18 @@
+/*Hacer  un pseudocodigo pararesover: Todos los lunes, miercoles, y viernes, una persona 
+corre la misma ruta y cronometra los tiempos obtenidos. Determinar el tiempo promedio que 
+la persona tarda en recorrer la ruta en una semana cualquiera. */ 
+
+real tiempo_lunes, tiempo_miercoles, tiempo_viernes, tiempo_promedio
+
+inicio
+	escriba "Digite el tiempo obtenido el lunes: "
+	lea tiempo_lunes
+	escriba "Digite el tiempo obtenido el  miercoles: "
+	lea tiempo_miercoles 
+	escriba "Digite el tiempo obtenido el viernes: "
+	lea tiempo_viernes
+	
+	tiempo_promedio <- (tiempo_lunes + tiempo_miercoles + tiempo_viernes) / 3
+	
+	escriba "El tiempo obtenido en esta semana es de: ", tiempo_promedio
+fin

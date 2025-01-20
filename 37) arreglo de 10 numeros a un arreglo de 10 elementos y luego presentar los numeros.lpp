@@ -1,0 +1,16 @@
+/* Ingresar 10 numeros a un arreglo de 10 elementos y luego presentar los numeros */
+
+arreglo [10] de entero numero 
+entero i
+
+inicio 
+	para i <- 1 hasta 10 haga 
+		escriba "Ingrese el numero de la posicion: ", i, " : "
+		lea numero [i]
+	fin para 
+
+	para i <- 1 hasta 10 haga
+		escriba numero [i]
+		llamar nueva_linea
+	fin para 
+fin

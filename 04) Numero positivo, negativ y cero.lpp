@@ -1,0 +1,21 @@
+// Hcer3 pseudocodigo para saber si un numero es positivo, negativo o cero
+
+entero numero
+
+inicio 
+	
+	escriba "Digite un numero"
+	lea numero
+	
+	
+	si numero > 0 entonces
+		escriba "El numero es positivo: "
+	sino 
+		si numero < 0 entonces 
+			escriba "El numero es negativo: "
+		sino
+			escriba "EL numero es cero: "
+		fin si
+	fin si
+
+fin

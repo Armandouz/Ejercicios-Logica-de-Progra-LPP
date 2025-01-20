@@ -1,0 +1,43 @@
+/* Ingresar el nombre del alumno, la nota, luego preguntar si desea continuar, al
+final presentar el numero de aprobados y reprobados. 
+
+	sintaxis:
+				Repita
+					(Insrucciones)
+				Hasta condicion		*/
+				
+caracter respuesta
+real nota
+entero cantidad_aprobados, cantidad_reprobados
+cadena [30] nombre
+
+inicio
+	cantidad_aprobados <- 0
+	cantidad_reprobados <- 0
+	
+	repita 
+		escriba "Ingresar el nombre del alumno: "
+		lea nombre
+		escriba "Ingresar la nota del alumno: "
+		lea nota
+		
+		si nota >= 10.5 entonces
+			cantidad_aprobados <- cantidad_aprobados + 1
+			sino
+				cantidad_reprobados <- cantidad_reprobados + 1 
+		fin si
+		
+		repita 
+			escriba "Desea continuar S/N: "
+			lea respuesta 
+		hasta (respuesta = 'N') o (respuesta = 'S')
+		
+	hasta (respuesta = 'N')
+	
+	llamar nueva_linea
+	escriba "Cantidad de aprobados: ", cantidad_aprobados
+	llamar nueva_linea
+	escriba "Cantidad de reprobados: ", cantidad_reprobados	
+			
+
+fin		

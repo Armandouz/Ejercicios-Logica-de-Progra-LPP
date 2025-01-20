@@ -1,0 +1,17 @@
+/* Hacer pseudocodigo que imprima todos los numeros naturales que hay desde la unidad hasta un numero
+que introducimos por teclad*/
+
+entero numero, i 
+
+inicio
+	escriba "Digite el maximo numero de elementos: "
+	lea numero
+	
+	i <- 0
+	
+	mientras i < numero haga
+		i <- i + 1
+		escriba i
+		llamar nueva_linea
+	fin mientras
+fin

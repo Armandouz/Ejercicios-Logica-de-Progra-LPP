@@ -1,0 +1,15 @@
+//Hacer un pseudocodigo para saber si un numero es par o impar
+
+entero numero
+
+inicio
+	escriba "Digite un numero: "
+	lea numero
+	
+	
+	si numero mod 2 = 0 entonces
+		escriba "El numero ", numero, " es par"
+	sino
+		escriba "El numero ",numero, " es impar"
+	fin si
+fin

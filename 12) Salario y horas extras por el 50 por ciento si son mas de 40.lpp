@@ -1,0 +1,24 @@
+/* Hacer un pseudocodigo para resolver: A un trabajador le pagan segun sus horas trabajadas y 
+la tarifa esta a un valor por hora. Si la cantidad de horas trabajadas es mahyor a 40 horas, la
+tarifa por hora se incrementa en un 50% para las horas extras. Calcular el salario del trabajador
+dadas las horas trabajadas y la tarifa*/
+
+entero horas, tarifa, tarifa_extra, horas_extra
+real salario
+
+inicio
+	escriba "Digite las horas trabajadas "
+	lea horas
+	escriba "Digite la tarifa pagada por hora: "
+	lea tarifa
+	
+	si horas <= 40 entonces 
+		salario <- horas * tarifa
+	sino
+		tarifa_extra <- tarifa + 0.50 * tarifa
+		horas_extra <- horas - 40
+		salario <- horas_extra * tarifa_extra + 40 * tarifa
+	fin si
+	
+	escriba "El salario total es: ", salario
+fin

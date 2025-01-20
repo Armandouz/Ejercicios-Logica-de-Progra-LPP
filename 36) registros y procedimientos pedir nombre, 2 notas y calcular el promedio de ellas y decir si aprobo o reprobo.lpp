@@ -1,0 +1,64 @@
+/* Hacer un pseudocodigo para dado 5 alumnos pedir el nombre, las notas de 2 practicas 
+y calcular el promedio de ellas, y escribir el promedio y decir si esta aprobado o no
+
+registro reg_alumno
+	cadena [30] nombre
+	real primera_practica, segunda_practica, nota_final
+	cadena [10] obs
+fin registro 															*/
+
+registro reg_alumno
+	cadena [30] nombre
+	real primera_practica, segunda_practica, nota_final
+	cadena [10] obs
+fin registro 
+
+reg_alumno alum
+entero i
+
+procedimiento ingreso (var reg_alumno alum)
+
+inicio
+	escriba "Ingresar el nombre: "
+	lea alum.nombre
+	escriba "Ingresar la nota de la primera practica: "
+	lea alum.primera_practica
+	escriba "Ingrese la nota de la segunda practica: "
+	lea alum.segunda_practica
+fin
+
+procedimiento calculo ( var reg_alumno alum)
+
+inicio
+	alum.nota_final <- (alum.primera_practica + alum.segunda_practica) / 2
+	alum.obs <- observaciones (alum.nota_final)
+fin
+
+funcion observaciones (real nota) : cadena [10]
+	cadena [10] vobs
+inicio
+	si nota >= 10.5 entonces
+		vobs <- "Aprobado"
+	sino
+		vobs <- "Reprobado"
+	fin si
+	retorne vobs
+fin
+
+procedimiento presentar (reg_alumno alum)
+inicio
+	escriba "Nota final: ", alum.nota_final
+	llamar nueva_linea
+	escriba "Observacion: ", alum.obs
+	llamar nueva_linea
+fin
+
+inicio
+	para i <- 1 hasta 5 haga
+		llamar ingreso (alum)
+		llamar calculo (alum)
+		llamar nueva_linea
+		llamar presentar (alum)
+		llamar nueva_linea
+	fin para 
+fin

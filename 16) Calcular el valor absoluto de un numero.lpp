@@ -1,0 +1,15 @@
+// Hacer pseudocodigo que ingrese un numero e imprima el valor absoluto del mismo.
+
+real numero, valor_absoluto
+
+inicio
+	escriba "Digite un numero: "
+	lea numero
+	
+	si numero > 0 entonces 
+		escriba "EL valor absoluto del numero es: ", numero
+	sino 
+		valor_absoluto <- numero * -1
+		escriba "El valor absoluto del numero es: ", valor_absoluto
+	fin si
+fin
